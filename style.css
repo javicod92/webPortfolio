@@ -1,0 +1,113 @@
+/* ROOT Variables */
+:root {
+    /* colours */
+    --primary-text: #dddddd;
+    --bg-color1: #3a3d40;
+    --bg-color2: #181719;
+    --main-color: #9dbc55;
+}
+
+/* General Font Face */
+@font-face {
+    font-family: Poppins;
+    src: url(./assets/fonts/Poppins/Poppins-Light.ttf);
+    font-style: normal;
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(./assets/fonts/Poppins/Poppins-Medium.ttf);
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(./assets/fonts/Poppins/Poppins-Italic.ttf);
+    font-style: italic;
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(./assets/fonts/Poppins/Poppins-BoldItalic.ttf);
+    font-style: italic;
+    font-weight: 400;
+}
+
+/* General Styles */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    color: var(--primary-text);
+    scroll-behavior: smooth;
+    text-decoration: none;
+    list-style: none;
+}
+
+html {
+    /* Set font size for easy rem calculations
+    * default document font size = 16px, 1rem = 16px, 100% = 16px
+    * (100% / 16px) * 10 = 62.5%, 1rem = 10px, 62.5% = 10px
+    */
+    font-size: 62.5%;
+}
+
+body {
+    /* background: linear-gradient(45deg, var(--bg-color1) 0%, var(--bg-color2) 100%); */
+    background: var(--bg-color2);
+    max-width: 100svw;
+    min-height: 100svh;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 100;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 8rem;
+    background: var(--bg-color2);
+    /* box-shadow: 0 2px 2px rgba(0, 0, 0, 0.4); */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 6rem;
+    z-index: 100;
+    flex-wrap: wrap;
+}
+
+.header__logo {
+    font-size: 1.8em;
+    cursor: default;
+}
+
+.header__logo span {
+    color: var(--main-color);
+}
+
+.links {
+    display: flex;
+    gap: 6rem;
+    font-size: 1.4em;
+}
+
+.links a {
+    transition: 0.3s;
+}
+
+.links a:hover,
+.links a.--active {
+    color: var(--main-color);
+}
+
+section {
+    width: 100%;
+    min-height: 100vh;
+    padding: 8rem 8rem 2rem;
+    /* background: red; */
+}
