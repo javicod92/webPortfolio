@@ -7,36 +7,6 @@
     --main-color: #9dbc55;
 }
 
-/* General Font Face */
-@font-face {
-    font-family: Poppins;
-    src: url(./assets/fonts/Poppins/Poppins-Light.ttf);
-    font-style: normal;
-    font-weight: 100;
-}
-
-@font-face {
-    font-family: Poppins;
-    src: url(./assets/fonts/Poppins/Poppins-Medium.ttf);
-    font-style: normal;
-    font-weight: 400;
-}
-
-@font-face {
-    font-family: Poppins;
-    src: url(./assets/fonts/Poppins/Poppins-Italic.ttf);
-    font-style: italic;
-    font-weight: 100;
-}
-
-@font-face {
-    font-family: Poppins;
-    src: url(./assets/fonts/Poppins/Poppins-BoldItalic.ttf);
-    font-style: italic;
-    font-weight: 400;
-}
-
-/* General Styles */
 * {
     box-sizing: border-box;
     padding: 0;
@@ -61,7 +31,7 @@ body {
     max-width: 100svw;
     min-height: 100svh;
     font-family: "Poppins", sans-serif;
-    font-style: normal;
+    font-style: italic;
     font-weight: 100;
 }
 
