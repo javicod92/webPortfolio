@@ -47,7 +47,7 @@ h3 {
 
 p {
     font-size: 1.6em;
-    font-weight: 200;
+    font-weight: 300;
 }
 
 a {
@@ -60,8 +60,11 @@ a {
     left: 0;
     width: 100%;
     padding: 2rem 8rem;
-    background: var(--bg-color2);
-    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
+    background: linear-gradient(-45deg, var(--bg-color1) 0%, var(--bg-color2) 100%);
+    /* background: var(--bg-color2); */
+    /* box-shadow: 0 2px 2px rgba(0, 0, 0, 0.4); */
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    /* backdrop-filter: blur(5px); */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -102,6 +105,7 @@ section {
 
 .home {
     background: linear-gradient(45deg, var(--bg-color1) 0%, var(--bg-color2) 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
     /* background: url(./assets/images/gulf-dec0ccde.svg);
     background-size: cover;
     background-repeat: repeat; */
@@ -173,4 +177,53 @@ section {
 
 .home__cv:hover {
     box-shadow: none;
+}
+
+/* .about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+} */
+
+.about {
+    margin: auto, 0;
+}
+
+.about__title {
+    text-align: center;
+    color: var(--main-color);
+    font-weight: 700;
+    font-size: 3.2em;
+    margin-bottom: 2rem;
+}
+
+.about__container {
+    display: flex;
+    gap: 5rem;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--bg-color2);
+    text-align: justify;
+}
+
+.about__container__article h3{
+    font-weight: 400;
+}
+
+.about__container__article p{
+    color: var(--bg-color1);
+}
+
+.article_technologies i{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    margin: 3rem 1.5rem 3rem 0;
+    font-size: 2em;
+    border: 2px solid var(--main-color);
+    border-radius: 50%;
+    color: var(--main-color);
+    transition: .5s ease;
 }
