@@ -397,13 +397,13 @@ section {
 }
 
 .footer {
-    min-height: 20rem;
+    min-height: 15rem;
     height: 100%;
     background: var(--bg-color2);
     padding: 2rem 8rem;
     display: flex;
     flex-wrap: wrap;
-    gap: 5rem;
+    gap: 2rem;
     align-items: flex-start;
     justify-content: space-between;
 }
@@ -466,4 +466,10 @@ section {
     font-weight: 200;
     line-height: 1.8;
     color: var(--main-color);
+}
+
+.footer__right {
+    margin: 0 auto;
+    color: var(--bg-color1);
+    font-size: 1.4em;
 }
