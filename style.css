@@ -45,12 +45,7 @@ h1 {
     font-weight: 700;
 }
 
-h2 {
-    font-size: 3.2em;
-    font-weight: 400;
-}
-
-h3 {
+h2, h3 {
     font-size: 3.2em;
     font-weight: 400;
 }
@@ -88,6 +83,13 @@ a {
     background: var(--main-color);
     color: var(--bg-color2);
     box-shadow: 0 0 1rem var(--main-color);
+}
+
+/* general section style design */
+section {
+    min-height: 100svh;
+    height: 100%;
+    padding: 8rem 8rem 2rem;
 }
 
 /* home page design (inicio) */
@@ -131,11 +133,6 @@ a {
     border-bottom: 1px solid var(--main-color);
 }
 
-section {
-    min-height: 100vh;
-    padding: 8rem 8rem 0;
-}
-
 .home {
     background: linear-gradient(45deg, var(--bg-color1) 0%, var(--bg-color2) 100%);
     clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
@@ -143,7 +140,12 @@ section {
     gap: 5rem;
     justify-content: center;
     align-items: center;
-    min-height: 100svh;
+}
+
+@media (max-width: 1024px) {
+    .home {
+        clip-path: none;
+    }
 }
 
 .home__container h3 span {
@@ -183,12 +185,12 @@ section {
     box-shadow: none;
 }
 
+/* about page design */
 .about {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100svh;
 }
 
 .about__title {
@@ -216,7 +218,7 @@ section {
     color: var(--bg-color1);
 }
 
-.article_technologies i {
+.article__technologies i {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -227,7 +229,6 @@ section {
     border: 2px solid var(--bg-color1);
     border-radius: 50%;
     color: var(--bg-color1);
-    transition: .5s ease;
 }
 
 /* projects page design */
@@ -252,12 +253,17 @@ section {
 }
 
 .projects__projects {
-    background: rgba(255, 255, 255, 0.8);
+    background: var(--primary-text);
     border: 1px solid var(--primary-text);
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
     border-radius: 5px;
     overflow: hidden;
     transition: 0.3s ease-out;
+}
+
+.projects__projects:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 10px var(--bg-color2);
 }
 
 .project__image {
@@ -270,11 +276,6 @@ section {
     color: var(--bg-color2);
     font-weight: 400;
     padding-top: 1.4rem;
-}
-
-.projects__projects:hover {
-    transform: scale(1.02);
-    box-shadow: 0 0 10px var(--bg-color2);
 }
 
 .projects__btn {
@@ -292,6 +293,7 @@ section {
     box-shadow: 0 0 10px var(--bg-color1);
 }
 
+/* contact page design */
 .contact {
     background: linear-gradient(45deg, var(--bg-color1) 0%, var(--bg-color2) 100%);
     text-align: center;
@@ -299,6 +301,7 @@ section {
     flex-direction: column;
     justify-content: space-evenly;;
     align-items: center;
+
 }
 
 .contact__title {
@@ -365,34 +368,34 @@ section {
     box-shadow: 0 0 10px var(--main-color);
 }
 
+/* footer page design */
 .footer {
     min-height: 15rem;
     height: 100%;
     background: var(--bg-color2);
     padding: 2rem 8rem;
+
+}
+
+.footer__container {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
-    gap: 2rem;
-    align-items: flex-start;
     justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
 }
 
-.footer__redes {
+.footer__redes,
+.footer__descripcion,
+.footer__sections {
     max-width: 35rem;
     width: 100%;
 }
 
-.footer__redes h4 {
-    padding-bottom: .6rem;
-    border-bottom: 2px solid var(--primary-text);
-}
-
-.footer__descripcion {
-    max-width: 35rem;
-    width: 100%;
-}
-
-.footer__descripcion h4 {
+.footer__redes h4, 
+.footer__descripcion h4,
+.footer__sections h4 {
     padding-bottom: .6rem;
     border-bottom: 2px solid var(--primary-text);
 }
@@ -400,16 +403,6 @@ section {
 .footer__descripcion p {
     margin-top: 3rem;
     color: var(--main-color);
-}
-
-.footer__sections{
-    max-width: 35rem;
-    width: 100%;
-}
-
-.footer__sections h4 {
-    padding-bottom: .6rem;
-    border-bottom: 2px solid var(--primary-text);
 }
 
 .section__links {
@@ -424,7 +417,8 @@ section {
 }
 
 .footer__right {
-    margin: 0 auto;
+    text-align: center;
     color: var(--bg-color1);
     font-size: 1.4em;
+    margin: 1rem 0;
 }
