@@ -248,8 +248,18 @@ section {
 /* projects page design */
 .projects {
     background: radial-gradient(var(--projects-color2) 0%, var(--projects-color1) 100%);
-    text-align: center;
+    /* text-align: center; */
     padding-bottom: 5rem;
+    display: grid;
+    grid-template-columns: 1fr minmax(320px, 1280px) 1fr;
+}
+
+.projects__container {
+    grid-column: 2 / 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .projects__title {
@@ -262,7 +272,7 @@ section {
     gap: 5rem;
     width: 100%;
     max-width: 1280px;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     padding-bottom: 4rem;
 }
 
@@ -272,6 +282,7 @@ section {
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
     border-radius: 5px;
     overflow: hidden;
+    text-align: center;
     transition: 0.3s ease-out;
 }
 
