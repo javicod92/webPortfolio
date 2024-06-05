@@ -39,6 +39,20 @@ body {
     color: var(--primary-text);
 }
 
+body::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--bg-color1);        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--projects-color1);    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 1px solid var(--primary-text);  /* creates padding around scroll thumb */
+}
+
 /* general text configurations */
 h1 {
     font-size: 5.2em;
