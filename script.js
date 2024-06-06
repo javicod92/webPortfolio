@@ -12,6 +12,7 @@ function change (element) {
     }
 }
 
+// la arrow function evita que que la función a la que llama el evento (change) se inicialice automáticamente.
 home.addEventListener("click", () => change (home));
 about.addEventListener("click", () => change (about));
 projects.addEventListener("click", () => change (projects));
