@@ -510,9 +510,13 @@ section {
     }
 
     .links__item a {
-        font-size: 1.2em;
+        font-size: 1.6em;
         display: block;
         width: 100%;
-        padding: 2rem;
+        padding: 1.5rem 0;
+    }
+
+    .footer {
+        padding: 2rem 4rem 2rem;
     }
 }
