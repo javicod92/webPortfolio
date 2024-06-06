@@ -515,4 +515,8 @@ section {
         width: 100%;
         padding: 1.5rem 0;
     }
+
+    .footer {
+        padding: 2rem 4rem 2rem;
+    }
 }
