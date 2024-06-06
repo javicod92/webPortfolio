@@ -489,6 +489,10 @@ section {
 }
 
 @media (max-width: 540px) {
+    section {
+        padding: 8rem 4rem 2rem;
+    }
+    
     .header {
         min-height: 100svh;
         justify-content: space-around;
