@@ -25,15 +25,15 @@ const navLinks = document.querySelectorAll("header nav a");
 window.onscroll = () => {
     sections.forEach(section => {
         const top = window.scrollY; //scrollY return the value in pixels for the window scroll-y
-        const offset = section.offsetTop; //offsetTop returns the number of pixels between the top of the element and the top of the browser window
+        const offset = section.offsetTop - 60; //offsetTop returns the number of pixels between the top of the element and the top of the browser window
         const offsetHeigth = section.offsetHeight;
         const sectionId = section.getAttribute("id");
 
         if (top >= offset && top < offset + offsetHeigth) {
             navLinks.forEach(link => {
                 link.classList.remove("--active");
+                document.querySelector(`header nav a[href*=${sectionId}]`).classList.add("--active");
             });
-            document.querySelector(`header nav a[href*=${sectionId}]`).classList.add("--active");
             //uso a[href*=] porque mi ID de los anchors no coinciden con el ID de mis secciones - Dentro de mis anchos el atributo href es el que contiene
             //el id de la sección. El ID de mi anchor es "inicio" y el de la seccion inicio es "home".
         };
