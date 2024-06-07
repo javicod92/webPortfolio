@@ -463,7 +463,7 @@ section {
 
 .footer__right {
     text-align: center;
-    color: var(--bg-color1);
+    color: var(--primary-text);
     font-size: 1.4em;
     margin: 1rem 0;
 }
