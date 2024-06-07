@@ -9,7 +9,7 @@ Conceptos adquiridos y aplicados:
 - Uso de Flexbox y Grid para configurar el posicionamiento de los elementos HTML dentro de la página Web, permitiendo además que los mismos se reacomoden dependiendo de las dimensiones de la misma y no necesite realizar consulta de medios.
 - Uso de consultas de medios (@media queries) para adaptar elementos a las diferentes dimensiones de pantalla como las imágenes y barra de navegación.
 
-*IMPORTANTE: Este es un ejemplo de portolio web hecho de manera personal con los aportes del Informatorio Chaco - Este proyecto es solamente educativo y sin fines de lucro, con el objetivo de mostar los conocimientos adquiridos 
+*IMPORTANTE: Este es un ejemplo de portolio web hecho de manera personal mediante el curso "Informatorio Chaco" - Este proyecto es solamente de caracter educativo y sin fines de lucro, con el objetivo de mostar los conocimientos adquiridos 
 en el curso - Algunas imágenes fueron extraidas de la web.
 
 - El proyecto está deployado en: https://javicod92.github.io/webPortfolio/
