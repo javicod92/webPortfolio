@@ -223,7 +223,7 @@ section {
 }
 
 .about__title {
-    color: var(--main-color);
+    color: var(--projects-color1);
 }
 
 .about__container {
