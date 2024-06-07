@@ -445,7 +445,7 @@ section {
     border-bottom: 2px solid var(--primary-text);
 }
 
-.footer__descripcion p {
+.footer__descripcion p{
     margin-top: 3rem;
     color: var(--main-color);
 }
