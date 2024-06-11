@@ -1,0 +1,20 @@
+/* this is a simple css animation effect */
+
+.--move__left {
+    opacity: 0;
+    position: relative;
+    left: -10%;
+    animation: move_left .5s ease-in-out .5s forwards;
+}
+
+@keyframes move_left {
+    0% {
+        opacity: 0;
+        left: -10%;
+    }
+
+    100% {
+        opacity: 1;
+        left: 0%;
+    }
+}
