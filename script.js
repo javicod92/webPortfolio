@@ -39,3 +39,20 @@ window.onscroll = () => { //i can use onscrollend event.
         };
     });
 };
+
+//Funcion para hacer la pantalla del video - Una vez que el usuario haga click se cambia la imagen por el video de youtube
+document.getElementById("projects__convert").addEventListener("click", function() {
+    const videoUrl = 'https://www.youtube.com/embed/oj5aNkaclSs?si=GG7fAz38jkqkH3X9&autoplay=1';
+    const iframe = document.createElement("iframe");
+    
+    iframe.setAttribute('src', videoUrl);
+    iframe.setAttribute('width', '560');
+    iframe.setAttribute('height', '315');
+    iframe.setAttribute('title', 'YouTube video player');
+    iframe.setAttribute('class', 'projects__convert');
+    iframe.setAttribute('frameborder', '0');
+    iframe.setAttribute('allowfullscreen', '');
+    iframe.setAttribute('autoplay', '1');
+    
+    this.parentNode.replaceChild(iframe, this);
+});

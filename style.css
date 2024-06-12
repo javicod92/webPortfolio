@@ -348,11 +348,12 @@ section {
     font-size: 2.5em;
 }
 
-.projects__video iframe {
+.projects__video .projects__convert {
     width: 100%;
     height: auto;
     aspect-ratio: 16/9;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 /* contact page design */
