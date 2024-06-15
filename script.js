@@ -9,7 +9,7 @@
 //     active.classList.remove("--active");
 //     element.classList.add("--active");
 // }
-// /*Función de evento para los botones - Se puede utilizar una funcion scrolly pero
+// /*Función de evento para los botones - Se puede utilizar una función scrolly pero
 //  para este caso sencillo no es necesario */
 // home.addEventListener("click", () => change (home));
 // about.addEventListener("click", () => change (about));
@@ -26,21 +26,21 @@ window.onscroll = () => { //i can use onscrollend event.
     sections.forEach(section => {
         const top = window.scrollY; //scrollY return the value in pixels for the window scroll-y
         const offset = section.offsetTop - 60; //offsetTop returns the number of pixels between the top of the element and the top of the browser window
-        const offsetHeigth = section.offsetHeight;
+        const offsetHeight = section.offsetHeight;
         const sectionId = section.getAttribute("id");
 
-        if (top >= offset && top < offset + offsetHeigth) {
+        if (top >= offset && top < offset + offsetHeight) {
             navLinks.forEach(link => {
                 link.classList.remove("--active");
             });
             document.querySelector(`header nav a[href*=${sectionId}]`).classList.add("--active");
             //uso a[href*=] porque mi ID de los anchors no coinciden con el ID de mis secciones - Dentro de mis anchos el atributo href es el que contiene
-            //el id de la sección. El ID de mi anchor es "inicio" y el de la seccion inicio es "home".
+            //el id de la sección. El ID de mi anchor es "inicio" y el de la sección inicio es "home".
         };
     });
 };
 
-//Funcion para hacer la pantalla del video - Una vez que el usuario haga click se cambia la imagen por el video de youtube
+//Función para hacer la pantalla del video - Una vez que el usuario haga click se cambia la imagen por el video de YouTube
 document.getElementById("projects__convert").addEventListener("click", function() {
     const videoUrl = 'https://www.youtube.com/embed/oj5aNkaclSs?si=GG7fAz38jkqkH3X9&autoplay=1';
     const iframe = document.createElement("iframe");
