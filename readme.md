@@ -12,17 +12,25 @@
 
 ### 📸 Capturas de Pantalla del Proyecto
 
-1) En la primer imagen se muestra la página de <b>Inicio</b>
+1) En la primer imagen se muestra la página de <b>Inicio</b>, en esta sección hay una breve descripcion de mi y se puede descargar el CV
 
 ![73shots_so](https://github.com/user-attachments/assets/8e6cad15-62f4-4794-88e6-b15812feac60)
 
-2)
+2) En esta imagen se muestra la seccion <b>Sobre mi</b>, en esta sección se describe de manera mas detallada los aspectos que me caracterizan
 
 ![634shots_so](https://github.com/user-attachments/assets/077275ee-d66e-4d05-b970-a1958dee7cdd)
 
+3) En esta imagen se muestra la seccion <b>Proyectos</b>, en esta sección se muestran algunos de mis proyectos mas recientes hasta el momento de confeccionar el Portafolio
 
 ![873shots_so](https://github.com/user-attachments/assets/6f671d4b-a697-40d0-a047-8d67e789da2f)
+
+4) Esta imágen muestra la seccion de <b>Contacto</b>
+
 ![573shots_so](https://github.com/user-attachments/assets/00459ba0-cad2-44ee-bcfd-8448e1cfa317)
-![302shots_so](https://github.com/user-attachments/assets/6d3f4089-4273-48a6-895a-df2480849de4)
+
+5) Esta imágen muestra el Footer utilizado en la página
+
+![849shots_so](https://github.com/user-attachments/assets/6bbb0d8e-4f03-4a00-90e5-d209300f46ed)
+
 
 - El proyecto está deployado en: https://javicod92.github.io/webPortfolio/
