@@ -32,5 +32,9 @@
 
 ![849shots_so](https://github.com/user-attachments/assets/6bbb0d8e-4f03-4a00-90e5-d209300f46ed)
 
+6) Diseño Web Responsivo
+
+![34shots_so](https://github.com/user-attachments/assets/f95f663c-3be2-4773-b4a5-130d368b2972)
+
 
 - El proyecto está deployado en: https://javicod92.github.io/webPortfolio/
