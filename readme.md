@@ -10,7 +10,7 @@
 - Uso de Flexbox y Grid para configurar el posicionamiento de los elementos HTML dentro de la página Web, permitiendo además que los mismos se reacomoden dependiendo de las dimensiones de la misma y no necesite realizar consulta de medios.
 - Uso de consultas de medios (@media queries) para adaptar elementos a las diferentes dimensiones de pantalla como las imágenes y barra de navegación.
 
-### Capturas de Pantalla del Proyecto
+### 📸 Capturas de Pantalla del Proyecto
 
 1) En la primer imagen se muestra la página de <b>Inicio</b>
 
